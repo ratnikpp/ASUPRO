@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Asupro</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
         <header class="page-header">
 
             <section class="top-menu">
                 <div class="top-menu__wrapper">
-                    <a class="top-menu__logo-link" href="#" aria-label="Главная страница">
-                        <img src="img/logo.png" width="" height="" alt="Логотип Асу про">
-                    </a>
-
-                    <p class="top-menu__phone">
-                        <img class="top-menu__icon" src="img/phone.png" width="" height="" alt="Телефон"><span class="top-menu__text">
-                        +7(800)222-38-82</span>
-                    </p>
-                    <p class="top-menu__email">
-                        <img class="top-menu__icon" src="img/email.png" width="" height="" alt="Почта"><span class="top-menu__text--email">
-                        asupro@asupro.ru</span>
-                    </p>
+                	<div class="top-menu__logo">
+	                    <a class="top-menu__logo-link" href="#" aria-label="Главная страница">
+	                        <img class="graficlogo" src="img/Logo1.png"  alt="Логотип Асу про">
+	                    </a>
+	                </div>
+	                <div class="top-menu__left">
+	                	<div class="top-menu__phone">
+	                        <object class="top-menu__icon" type="image/svg+xml" data="img/phone.svg"></object>
+	                        <p>+7(800)222-38-82</p>
+	                    </div>
+	                    <div class="top-menu__email">
+	                    	<object class="top-menu__icon" type="image/svg+xml" data="img/mail.svg"></object>
+	                       	<p>asupro@asupro.ru</p>
+	                    </div>
+	                </div>
                 </div>
+            </section>
                 <nav class="main-nav">
                     <div class="main-nav__wrapper">
                         <ul class="main-nav__list site-list">
@@ -32,7 +40,7 @@
                                 <a href="#">Продукция</a>
                             </li>
                             <li class="site-list__item">
-                                <a href="#">Усдуги</a>
+                                <a href="#">Услуги</a>
                             </li>
                             <li class="site-list__item">
                                 <a href="#">Наши работы</a>
@@ -43,71 +51,129 @@
                             <li class="site-list__item">
                                 <a href="#">Вакансии</a>
                             </li>
+                            <li class="site-list__item">
+                            	
+                            	<a class="search__link" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+				  			</li>
+				  			<form class="form__search">
+				  				<input class="form__field" type="search" name="q" placeholder="Поиск">
+				  				<input class="form__submit-button" type="submit" value="Найти">
+				  			</form>
                         </ul>
-                        <button class="main-nav__search-button" aria-label="Кнопка поиска"></button>
                     </div>
                 </nav>
         </header>
         <main class="page-main">
             <h1 class="visually-hidden">«Асу про»</h1>
-            <section class="slider">
+            <section class="page-main__slider">
                 <div class="slider__wrapper">
-                    <ul class="slider__list">
-                        <li class="slider__item">
-                            <p class="slider__text"></p>
-                        </li>
-                    </ul>
-                    <p class="advantages__toggles slider__toggles">
-                        <button class="slider__toggle"> type="button">1</button>
-                        <button class="slider__toggle" type="button">2</button>
-                        <button class="slider__toggle" type="button">3</button>
-                    </p>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <div class="slider-controls">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+
+                      <!-- Full-width images with number and caption text -->
+                      <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/top-slider1.jpg">
+                        <div class="slider__text">Комплексное инженерные решения<br> 
+                        Проектирование Монтаж Пусконаладка<br> 
+                        Системы автоматизации и экологического контроля
+                        </div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/top-slider1.jpg">
+                        <div class="slider__text">Комплексное инженерные решения<br> 
+                        Проектирование Монтаж Пусконаладка<br> 
+                        Системы автоматизации и экологического контроля
+                        </div>
+                      </div>
+
+                      <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/top-slider1.jpg">
+                        <div class="slider__text">Комплексное инженерные решения<br> 
+                            Проектирование Монтаж Пусконаладка<br> 
+                            Системы автоматизации и экологического контроля
+                        </div>
+                      </div>
+
+                      <!-- Next and previous buttons -->
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    
                 </div>
             </section>
+             
+              
+              
+         
+
+ 
+
             <section class="features">
-                <h2 class="features__title">Продукция и Услуги</h2>
-                <ul class="features__list">
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                    <li class="features__item">
-                        <img class="features__icon">
-                        <a class features__link href="#">Проектно-изыскательные работы</a>
-                        <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
-                    </li>
-                </ul>
+                <div class="features__wrapper">
+                    <a class="features__link" href="#"><h2 class="features__title">Основные направления</h2></a>
+                    <ul class="features__list">
+                        <div class="features__container">
+                        <li class="features__item">
+                            <a class="features__icon" href="#"><img src="img/features-00.jpg" width="270" height="181" alt=""><a>
+                            <a class="features__link" href="#"><h3>Проектно-изыскательные работы</h3></a>
+                            <p class="features__text">Проектное обследование производства. Техническое задание, рабочая документация. Экспертиза</p>
+                        </li>
+
+
+
+                        <li class="features__item">
+                           <a class="features__icon" href="#"><img src="img/features-01.jpg" width="270" height="181" alt=""><a>
+                            <a class="features__link" href="#"><h3>Строительно-монтажные работы</h3>
+                            </a>
+                            <p class="features__text">Все виды строительно-монтажных работ на объектах нефте-газовой отрасли: добычи,транспорта и хранения.</p>
+                        </li>
+                        <li class="features__item">
+                            <a class="features__icon" href="#"><img src="img/features-02.jpg" width="270" height="181" alt=""><a>
+                            <a class="features__link" href="#"><h3>Метрологическое обеспечение</h3>
+                            </a>
+                            <p class="features__text">Проверка и колибровка средств измерений. Техническое обслуживание средств измерений. Экспертиза.</p>
+                        </li>
+                        <li class="features__item">
+                            <a class="features__icon" href="#"><img src="img/features-03.jpg" width="270" height="181" alt=""><a>
+                            <a class="features__link" href="#"><h3>Пусконаладочные работы</h3>
+                            </a>
+                            <p class="features__text">Все виды пусконаладочных работ на объектах нефте-газовой отрасли: добычи,транспорта и хранения.</p>
+                        </li>
+                        <li class="features__item">
+                            <a class="features__icon" href="#"><img src="img/features-04.jpg" width="270" height="181" alt=""><a>
+                            <a class="features__link" href="#"><h3>Микропроцессорная техника</h3></a>
+                            <p class="features__text">Микропроцессорная технака для АСУ: программируемые контроллеры, устройства управления нагрузкой.</p>
+                        </li>
+                        <li class="features__item">
+                            <a class="features__icon" href="#"><img src="img/features-05.jpg" width="270" height="181" alt=""><a>
+                            <a class="features__link" href="#"><h3>Системы АСУ ТП</h3></a>
+                            <p class="features__text">Системы АСУ ТП для промышленности и жилищно-комунального хозяйства. Комплектующие.</p>
+                        </li>
+                        <li class="features__item">
+                            <a class="features__icon" href="#"><img src="img/features-06.jpg" width="270" height="181" alt=""></a>
+                            <a class="features__link" href="#"><h3>Системы АСУ ТП</h3></a>
+                            <p class="features__text">Системы АСУ ТП для промышленности и жилищно-комунального хозяйства. Комплектующие.</p>
+                        </li>
+                        <li class="features__item">
+                            <a class="features__icon" href="#"><img src="img/features-07.jpg" width="270" height="181" alt=""><a>
+                            <a class="features__link" href="#"><h3>Электротехническая лаборатория</h3></a>
+                            <p class="features__text">Измерения и испытания оборудования до и свыше 1000 В. Передвижная лаборатория. Все виды контроля </p>
+                        </li>
+                    </div>
+                    </ul>
+                </div>
             </section>
             <section class="products">
                 <div class="products__wrapper">
@@ -186,6 +252,11 @@
         <footer clas="page-footer">
 
         </footer>
+        <script src="js/script.js"></script>
 
 </body>
+
+
 </html>
+
+    
