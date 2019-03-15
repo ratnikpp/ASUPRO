@@ -34,16 +34,35 @@
                     <div class="main-nav__wrapper">
                         <ul class="main-nav__list site-list">
                             <li class="site-list__item">
-                                <a>Главная</a>
+                                <a href="#">О компании<i class="fas fa-angle-down"></i></a>
+                                <ul class="main-nav__submenu">
+							        <li><a href="#">История развития</a></li>
+							        <li><a href="#">Сертификаты и лицензии</a></li>
+							        <li><a href="#">Контакты</a></li> 
+						      </ul>
                             </li>
                             <li class="site-list__item">
-                                <a href="#">Продукция</a>
+                                <a href="#">Продукция<i class="fas fa-angle-down"></i></a>
+                                 <ul class="main-nav__submenu">
+							        <li><a href="#">Программируемые контроллеры</a></li>
+							        <li><a href="#">Устройства управления нагрузкой</a></li>
+							        <li><a href="#">Экологический мониторинг</a></li>
+							        <li><a href="#">Контроль промышленных выбросов</a></li>
+							        <li><a href="#">Программное обуспечение</a></li> 
+						      </ul>
                             </li>
                             <li class="site-list__item">
-                                <a href="#">Услуги</a>
+                                <a href="#">Услуги<i class="fas fa-angle-down"></i></a>
+                                <ul class="main-nav__submenu">
+							        <li><a href="#">Проектирование</a></li>
+							        <li><a href="#">Монтаж</a></li>
+							        <li><a href="#">Наладка</a></li>
+							        <li><a href="#">Метрологическое обеспечение</a></li>
+							        <li><a href="#">Разработка ПО</a></li> 
+						      </ul>
                             </li>
                             <li class="site-list__item">
-                                <a href="#">Наши работы</a>
+                                <a href="#">Наши работы<i class="fas fa-angle-down"></i></a>
                             </li>
                             <li class="site-list__item">
                                 <a href="#">Контакты</a>
@@ -122,7 +141,7 @@
 
             <section class="features">
                 <div class="features__wrapper">
-                    <a class="features__link" href="#"><h2 class="features__title">Основные направления</h2></a>
+                    <a class="features__link" href="#"><h2 class="features__title">Направления деятельности</h2></a>
                     <ul class="features__list">
                         <div class="features__container">
                         <li class="features__item">
@@ -158,7 +177,7 @@
                         </li>
                         <li class="features__item">
                             <a class="features__icon" href="#"><img src="img/features-05.jpg" width="270" height="181" alt=""><a>
-                            <a class="features__link" href="#"><h3>Системы АСУ ТП</h3></a>
+                            <a class="features__link" href="#"><h3>Системы автоматики и телемеханики</h3></a>
                             <p class="features__text">Системы АСУ ТП для промышленности и жилищно-комунального хозяйства. Комплектующие.</p>
                         </li>
                         <li class="features__item">
@@ -177,60 +196,131 @@
             </section>
             <section class="products">
                 <div class="products__wrapper">
-                    <h2 class="products__title">Продукция</h2>
-                    <button class="products__button-level" type="button"></button>
-                    <button class="products__button-right" type="button"></button>
-                    <ul class="products__slider-list">
-                        <li class="products__item">
-                            <h3 class="products__name">Продукт 1</h3>
-                            <a class="products__link button">Описание</a>
-                        </li>
-                        <li class="products__item">
-                            <h3 class="products__name">Продукт 1</h3>
-                            <a class="products__link button">Описание</a>
-                        </li>
-                        <li class="products__item">
-                            <h3 class="products__name">Продукт 1</h3>
-                            <a class="products__link button">Описание</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                    <a class="products__title-link" href="#"><h2 class="products__title">Продукция</h2></a>
+                    <div id="w">
+			    <nav class="slidernav">
+			      <div id="navbtns" class="clearfix">
+			        <a href="#" class="previous"><i class="fas fa-chevron-circle-left"></i></a>
+			        <a href="#" class="next1"><i class="fas fa-chevron-circle-right"></i></a>
+			      </div>
+			    </nav>
+			    
+			    <div class="crsl-items" data-navigation="navbtns">
+			      <div class="crsl-wrap">
+			        <div class="crsl-item">
+			          <div class="thumbnail">
+			            <img class="thumbnail" src="img/kapp-82-168.png" width="280" height="136" alt="Капп-82-168">
+			           </div>
+			          <h3 class="products__name">КАПП-82-168</h3>
+			          <a class="products__link button" href="#">Описание</a>
+			         </div>
+			        <!-- post #1 -->
+			        <div class="crsl-item">
+			          <div class="thumbnail">
+			            <img src="img/product2.png" width="227" height="143" alt="danny antonucci">
+			          </div>
+			          <h3 class="products__name">Продукт 1</h3>
+			          <a class="products__link button" href="#">Описание</a>
+			         </div>
+			        <!-- post #2 -->
+			        <div class="crsl-item">
+			          <div class="thumbnail">
+			            <img src="img/product3.png" width="167" height="159" alt="watercolor paints">
+			          </div>
+			          <h3 class="products__name">Продукт 1</h3>
+			          <a class="products__link button" href="#">Описание</a>
+			         </div>
+			         <!-- post #3 -->
+			       	<div class="crsl-item">
+			          <div class="thumbnail">
+			            <img src="img/product3.png" alt="watercolor paints">
+			          </div>
+			         <h3 class="products__name">Продукт 1</h3>
+			          <a class="products__link button" href="#">Описание</a>
+			         </div>
+			         <!-- post #4 -->
+			        <div class="crsl-item">
+			          <div class="thumbnail">
+			            <img src="img/product3.png" alt="watercolor paints">
+			          </div>
+			          <h3 class="products__name">Продукт 1</h3>
+			          <a class="products__link button" href="#">Описание</a>
+			      </div>
+			  </div>
+			</div>
+		</div>
+       </div>
+     </section>
             <section class="news">
                 <div class="news__wrapper">
-                    <h2 class="news__title">Новости</h2>
+                    <a class="news__link" href="#"><h2 class="news__title">Новости</h2></a>
                     <ul class="news__list">
                         <li class="news__item">
-                            <h2 class="news__name">VII Международный форум «Артика»: настоящее и будущее</h2>
-                            <p class="news__text"></p>
+                        	<div class="news__image">
+                        	<img src="img/news1.jpg" alt=""></div>
+                        	<div class="news__content">
+                            <h3 class="news__name">VII Международный форум «Артика»: настоящее и будущее</h3>
+                            <p class="news__text">В рамках VIII Международного форума «Арктика: настоящее и будущее» в панельной сессии "Освоение месторождений углеводородов в Арктике" будет представлен доклад "Энергонезависимые комплексы для систем телемеханизации, управления технологическими объектами и экологического мониторинга".</p>
+                        </div>
+                        <div class="news__left-block">
                             <time class="new__date" datetime="2017-09-09">
-                                <b class=news__day">Дата:21.11.2018</b>
+                                <b class="news__day">21.11.2018</b>
                             </time>
                             <a class="news__button" href="#">Подробнее</a>
+                        </div>
                         </li>
-                        li class="news__item">
-                        <h2 class="news__name">VII Международный форум «Артика»: настоящее и будущее</h2>
-                        <p class="news__text"></p>
-                        <time class="new__date" datetime="2017-09-09">
-                            <b class=news__day">Дата:21.11.2018</b>
-                        </time>
-                        <a class="news__button" href="#">Подробнее</a>
+                        <li class="news__item">
+                        	<div class="news__image">
+                        		<img src="img/news2.jpg" alt="">
+                        	</div>
+                        	<div class="news__content">	
+		                        <h3 class="news__name">VII Международный форум «Артика»: настоящее и будущее</h3>
+		                        <p class="news__text">1 ноября в сфере деятельности нашей организации появилось новое направление - : "Экология производства". В наших планах -  экологические проекты в области контроля промышленных выбросов и экологического мониторинга.</p>
+		                    </div>
+		                    <div class="news__left-block">
+		                        <time class="new__date" datetime="2017-09-09">
+		                            <b class="news__day">21.11.2018</b>
+		                        </time>
+		                        <a class="news__button" href="#">Подробнее</a>
+                    		</div>
+                    
                         </li>
-                        li class="news__item">
-                        <h2 class="news__name">VII Международный форум «Артика»: настоящее и будущее</h2>
-                        <p class="news__text"></p>
-                        <time class="new__date" datetime="2017-09-09">
-                            <b class=news__day">Дата:21.11.2018</b>
-                        </time>
-                        <a class="news__button" href="#">Подробнее</a>
+                        <li class="news__item">
+                        	<div class="news__image">
+                        		<img src="img/news3.jpg" alt="">
+                        	</div>
+                        	<div class="news__content">
+		                        <h3 class="news__name">VII Международный форум «Артика»: настоящее и будущее</h3>
+		                        <p class="news__text">Идя в ногу со временем, мы завели странички в популярных соцсетях: Facebook, Вконтакте и Instagram. Приглашаем подписчиков!</p>
+		                    </div>
+		                    <div class="news__left-block">
+		                        <time class="new__date" datetime="2017-09-09">
+		                            <b class="news__day">21.11.2018</b>
+		                        </time>
+		                        <a class="news__button" href="#">Подробнее</a>
+                    		</div>
                         </li>
-                </div>
+              
                 </ul>
+            </div>
             </section>
             <section class="info">
                 <div class="info__wrapper">
-                    <h2 class="info__title">О компании</h2>
-                    <p class="info__text"></p>
+                    <a class="info__link" href="#"><h2 class="info__title">О компании</h2></a>
+                    <div class="info__text">
+                    	<p>ООО “АСУ ПРО” это инжиниринговая компания(системный интегратор), компетенцией которой являются системы автоматизации.</p>
+
+<p>Компания имеет собственный производственный офис в г.Оренбурге, филиалы : в г.Уфа, г.Самара, г.Хабаровск.</p>
+
+<p>Профессиональный состав организации – более 500 человек.</p>
+
+Компания имеет все необходимые свидетельства и лицензии, в том числе на проектирование и выполнение работ на особо опасных производственных объектах.</p>
+<p>Миссия компании: Удовлетворение спроса заказчиков(организаций и частных лиц) на проектные, СМР, ПНР, ТО, с соблюдением действующих норм и требований заказчика. Продвижения современных информационных технологий и технических решений.</p>
+
+<p>Цель: Ведущая российская компания на рынке автоматизации, предлагающая лучшие решения, продукты и технологии.</p>
+
+<p>Квалифицированный персонал компании имеет необходимое техническое оснащение, профессиональную подготовку, свидетельства и право допуска на особо опасные производства объекты.</p>
+                    </div>
                 </div>
             </section>
             <section class="partners">
@@ -253,6 +343,25 @@
 
         </footer>
         <script src="js/script.js"></script>
+
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
+        <script type="text/javascript">
+		
+
+$(function(){
+  $('.crsl-items').carousel({
+    visible: 3,
+    itemMinWidth: 180,
+    itemEqualHeight: 370,
+    itemMargin: 9,
+  });
+  
+  $("a[href=#]").on('click', function(e) {
+    e.preventDefault();
+  });
+});
+</script>
 
 </body>
 
