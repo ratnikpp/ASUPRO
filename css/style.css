@@ -187,11 +187,28 @@ p {
 	text-align: center;
 	padding: 10px 20px 10px 20px;
 }
+
+.site-list__item a:hover,
+.site-list__item a:focus,
+.site-list__item i:hover {
+	background-color: #3284b9;
+	color: #ffffff;
+}
+
+.site-list__item a:hover .fa-angle-down {
+	color: #ffffff;
+}
+
+
+.site-list__item a:hover .fa-search {
+	color: #ffffff;
+}
+
 /*submenu*/
 .main-nav__submenu {
 	padding: 0;
 	margin: 0;
-  background: #0079c2;
+  background: #c4d4e2;
   position: absolute;
   left: 0;
   top: 100%;
@@ -203,23 +220,60 @@ p {
   transition: .5s ease-in-out;
 }
 .main-nav__submenu a {
-	width: 200px;
+	width: 250px;
 	display: inline-block;
 	font-size: 12px;
-  color: #ffffff;
+  color: #111111;
   text-transform: none;
   text-align: center;
- border-bottom: 1px solid rgba(255,255,255,.1);
+ border-bottom: 1px solid #eaf0f5;
 }
 
-.main-nav__submenu li:hover {
-	opacity: 0.7;
+.main-nav__submenu a:hover {
+	background-color: #5598c4;
+	color: #ffffff;
 }
 .main-nav__submenu li:last-child a { border-bottom: none; }
-.site-list > li:hover .main-nav__submenu {
+.site-list > .site-list__item:hover .main-nav__submenu {
   opacity: 1;
   transform: scaleY(1);
 }
+
+.main-nav__submenu-two {
+	padding: 0;
+	margin: 0;
+  background: #c4d4e2;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 10;
+  
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+
+.site-list > .site-list__item > li:hover .main-nav__submenu-two {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*end submenu*/
 
@@ -497,11 +551,15 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  background: #fff;
+  background: #f7f6ef;
   padding: 8px;
   -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
   -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.4);
   box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+
+.crsl-item:hover {
+	box-shadow: 1px 1px 10px 2px rgba(0,121,194,0.5);
 }
 
 .crsl-item .thumbnail {
@@ -702,3 +760,153 @@ p {
 .info__text p {
 	padding-bottom: 5px;
 }
+
+.partners__wrapper {
+	max-width: 1020px;
+	padding: 0 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.partners__title {
+	text-align: center;
+	margin-bottom: 40px;
+	position: relative;
+	
+}
+
+.partners__title:after {
+	content: '';
+	position: absolute;
+	width: 45%;
+	height: 20px;
+	background-image: url(../img/partners-left.png);
+	background-repeat: no-repeat;
+	left: 0;
+	top: 50%;
+	}
+
+.partners__title:before {
+	content: '';
+	position: absolute;
+	width: 45%;
+	height: 20px;
+	background-image: url(../img/partners-right.png.);
+	background-repeat: no-repeat;
+	right: 0;
+	top: 50%;
+	}
+
+
+.partners__slider-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.partners__item {
+	width: 25%;
+}
+
+.parthners__link {
+	color: #000000;
+}
+
+.page-footer {
+	margin-top: 40px;
+	background-color: #051855;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.page-footer__wrapper {
+	max-width: 1020px;
+	padding: 0 10px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.page-footer__nav-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+
+}
+
+.page-footer__item {
+	margin-right: 10px;
+}
+
+.page-footer__submenu {
+	padding: 0;
+	margin: 0;
+}
+
+.page-footer__link {
+	font-size: 13px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.page-footer__submenu a {
+	color: #ffffff;
+	font-size: 11px;
+}
+
+
+.page-footer__left-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.page-footer__social {
+	display: flex;
+	justify-content: space-between;
+	width: 100px;
+	font-size: 14px;
+}
+.page-footer__social i:hover,
+.page-footer__social i:focus {
+	color: #80a0ca;
+}
+
+
+.page-footer__social i {
+	font-size: 24px;
+	color: #ffffff;
+}
+
+.page-footer__contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	text-align: center;
+	}
+
+.page-footer__contact span {
+	color: #ffffff;
+	margin-bottom: 20px;
+}	
+
+.page-footer__contact i {
+	margin-right: 3px;
+}
+
+.page-footer__copyright {
+	display: flex;
+}
+
+.page-footer__copyright span {
+	color: #ffffff;
+	margin-left: 6px;
