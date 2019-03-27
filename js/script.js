@@ -3,12 +3,6 @@
 
 //search
 
- var link = document.querySelector(".search__link");
- var popup = document.querySelector(".form__search");
- link.addEventListener("click", function (evt) {
- evt.preventDefault();
- popup.classList.add("search-show");
- });
 
 
 //slider top
