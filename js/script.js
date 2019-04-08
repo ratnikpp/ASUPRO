@@ -40,10 +40,10 @@ function showSlides(n) {
 //carousell products
 $(function(){
   $('.crsl-items').carousel({
-    visible: 3,
-    itemMinWidth: 180,
-    itemEqualHeight: 370,
-    itemMargin: 9,
+    visible: 4,
+    itemMinWidth: 120,
+    itemEqualHeight: 320,
+    itemMargin: 10,
   });
   
   $("a[href=#]").on('click', function(e) {
