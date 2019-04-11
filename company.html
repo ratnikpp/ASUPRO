@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Company</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Asupro</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/regular.css" integrity="sha384-FKw7x8fCxuvzBwOJmhTJJsKzBl8dnN9e2R4+pXRfYoHivikuHkzWyhKWDSMcGNK8" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
 </head>
 <body>
-	<header class="page-header">
+        <header class="page-header">
             <section class="top-menu">
                 <div class="top-menu__wrapper">
-                	<div class="top-menu__logo">
-	                    <a class="top-menu__logo-link" href="index.html" aria-label="Главная страница">
-	                        <img class="graficlogo" src="img/Logo1.png"  alt="Логотип Асу про">
-	                    </a>
-	                </div>
-	                <div class="top-menu__left">
-	                	<div class="top-menu__phone">
-	                        <a class="phone__link" href="tel:+78002223882"><i class="fas fa-phone"></i>+7(800)222-38-82</a>
-	                    </div>
-	                    <div class="top-menu__email">
+                    <div class="top-menu__logo">
+                        <a class="top-menu__logo-link" href="index.html" aria-label="Главная страница">
+                            <img class="graficlogo" src="img/Logo1.png"  alt="Логотип Асу про">
+                        </a>
+                    </div>
+                    <div class="top-menu__left">
+                        <div class="top-menu__phone">
+                            <a class="phone__link" href="tel:+78002223882"><i class="fas fa-phone"></i>+7(800)222-38-82</a>
+                        </div>
+                        <div class="top-menu__email">
                             <a class="email__link" href="mailto:asupro@asupro.ru"><i class="fas fa-envelope"></i>asupro@asupro.ru</a>
-	                    </div>
-	                </div>
+                        </div>
+                    <label for="menu-checkbox" class="toggle-nav__button"></label>
+
+                    </div>
                 </div>
             </section>
                 <nav class="main-nav">
+
                     <div class="main-nav__wrapper">
+                        <input type="checkbox" id="menu-checkbox">
+                        
                         <ul class="main-nav__list site-list">
                             <li class="site-list__item">
-                                <a class="site-list__link site-list__link-active">О компании<i class="fas fa-angle-down"></i></a>
+                                <a class="site-list__link" href="company.html">О компания<i class="fas fa-chevron-down"></i></i></a>
                                 <ul class="main-nav__submenu">
-							        <li><a href="#">История развития</a></li>
-							        <li><a href="#">Новости</a></li>
-							        <li><a href="#">Сертификаты и лицензии</a></li>
-                                    <li class="site-list__item">
-                                <a href="#">Вакансии</a></li>
-                            </ul>
+                                
+                                    <li><a href="#">История развития</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Сертификаты и лицензии</a></li>
+                                    <li class="site-list__item"><a href="#">Вакансии</a></li>
+                                </ul>
                             </li>
-                            </li>
+
                             <li class="site-list__item">
-                                <a class="site-list__link" href="#">Услуги<i class="fas fa-angle-down"></i></a>
+                                <a class="site-list__link" href="#">Услуги<i class="fas fa-chevron-down"></i></a>
                                 <ul class="main-nav__submenu">
-							        <li><a href="#">Проектно-изыскательские работы</a></li>
-							        <li><a href="#">Строительно-монтажные работы</a></li>
-							        <li><a href="#">Пусконаладочные работы</a></li>
-							        <li><a href="#">Электротехническая лаборатория</a></li> 
+                                    <li><a href="#">Проектно-изыскательские работы</a></li>
+                                    <li><a href="#">Строительно-монтажные работы</a></li>
+                                    <li><a href="#">Пусконаладочные работы</a></li>
+                                    <li><a href="#">Электротехническая лаборатория</a></li> 
                                 </ul>
                             </li>
                             <li class="site-list__item">
-                                <a class="site-list__link" href="#">Производство<i class="fas fa-angle-down"></i></a>
+                                <a class="site-list__link" href="#">Производство<i class="fas fa-chevron-down"></i></a>
                                 <ul class="main-nav__submenu">
                                     <li><a href="#">Система автоматики и телемеханики</a></li>
                                     <li><a href="#">Микропроцессорная техника</a></li>
@@ -72,19 +80,20 @@
                                 <a class="site-list__link" href="#">Контакты</a>
                             </li>
                             <li class="site-list__item">
-                            	
-                            	<a class="site-list__link search__link" href="#" aria-label="Поиск по сайту"><i class="fas fa-search" aria-hidden="true"></i></a>
-				  			</li>
-				  			<div class="form__search">
-				  			<form>
-				  				<input class="form__field" type="search" name="q" placeholder="Поиск">
-				  				<input class="form__submit-button" type="submit" value="Найти">
-				  			</form>
-				  		</div>
+                                
+                                <a class="site-list__link search__link" href="#" aria-label="Поиск по сайту"><i class="fab fa-sistrix"></i></a>
+                                <div class="form__search">
+                            <form>
+                                <input class="form__field" type="search" name="q" placeholder="Поиск">
+                                <input class="form__submit-button" type="submit" value="Найти">
+                            </form>
+                            </div>
+                            </li>
+                            
                         </ul>
                     </div>
                 </nav>
-            </header>
+        </header>
             <main class="page-main">
             	<div class="page-main__wrapper">
             		<section class="page-main__top">
