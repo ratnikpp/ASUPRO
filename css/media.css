@@ -815,6 +815,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
    line-height: 24px;
 }
 
+.page-main__content h4 {
+    font-size: 14px;
+}
+
 .page-main__content p {
     margin: 14px 0;
 }
@@ -851,6 +855,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
    font-size: 14px;
    line-height: 18px;
+  }
+
+  .page-main__content h4 {
+    font-size: 13px;
   }
 
 .page-main__content p {
