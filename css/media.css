@@ -178,7 +178,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
   content: "\f0d8";
   color: #ffffff;
  }
-  
+.site-list__item-search {
+  display: none;
+}  
 
 }
 
