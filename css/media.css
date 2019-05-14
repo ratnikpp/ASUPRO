@@ -850,8 +850,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     padding-bottom: 0;
   }
 .page-main__content h3 {
-   margin-top: 10px;
-   margin-bottom: 20px;
+   margin-top: 20px;
+   margin-bottom: 10px;
 
    font-size: 14px;
    line-height: 18px;
@@ -859,6 +859,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
   .page-main__content h4 {
     font-size: 13px;
+    margin-top: 20px;
+   margin-bottom: 10px;
   }
 
 .page-main__content p {

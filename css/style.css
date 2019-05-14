@@ -963,6 +963,10 @@ z-index: 10;
   	margin: 14px 0;
 }
 
+.page-main__content a {
+	color: #0073BB;
+}
+
 .page-main__content h2 + h3 {
   	margin-top: 30px;
 }
@@ -985,7 +989,7 @@ z-index: 10;
 }
 
 .page-main__block-text p:first-child {
-	padding-right: 2%;
+	padding-right: 20%;
 }
 
 
