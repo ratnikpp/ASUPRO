@@ -628,6 +628,7 @@ z-index: 10;
 .products__link {
 	padding: 6px 20px;
 	margin-bottom: 20px;
+	
 }
 
 .products__link:hover,
@@ -934,6 +935,11 @@ z-index: 10;
 	margin-bottom: 40px;
 }
 
+.page-main__content ul {
+	padding: 0;
+	margin: 0;
+}
+
 .page-main__content h2 {
 	margin-top: 60px;
   	margin-bottom: 30px;
@@ -955,17 +961,30 @@ z-index: 10;
 .page-main__content h4 {
 	font-size: 16px;
 	line-height: 20px;
-	font-style: italic;
+	text-align: center;
 	margin-bottom: 0;
+}
+
+.page-main__content h5 {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.page-main__content h6 {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 
 .page-main__content p {
   	margin: 14px 0;
 }
 
-.page-main__content a {
-	color: #0073BB;
-}
 
 .page-main__content h2 + h3 {
   	margin-top: 30px;
@@ -974,6 +993,10 @@ z-index: 10;
 .page-main__title {
 	margin-top: 40px;
 	margin-bottom: 20px;
+}
+
+.page-main__link {
+	color: #0073BB;
 }
 
 .page-main__block {
@@ -998,6 +1021,12 @@ z-index: 10;
 }
 
 
+.page-main__articale {
+
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #0073BB; 
+}
 
 .breadcrumbs {
   display: flex;
@@ -1007,7 +1036,8 @@ z-index: 10;
   margin: 0;
 
   list-style: none;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs li {
@@ -1066,11 +1096,11 @@ z-index: 10;
 
 
 .sidebar__link {
-	width: 190px;
+	width: 250px;
 	position: relative;
 	display: inline-block;
 	color: #111111;
-	padding: 8px;
+	padding: 10px 5px;
 	background-color: #c4d4e2;
 	border-bottom: 1px solid #ffffff;
 }
@@ -1099,6 +1129,46 @@ z-index: 10;
 	display: flex;
 }
 
+.back-to-top {
+	position: fixed;
+	right: 10px;
+	bottom: 200px;
+	width: 40px;
+	height: 40px;
+	border-color: transparent;
+	border-radius: 50%;
+	background-color: #0073BB;
+	
+}
 
+.back-to-top:hover,
+.back-to-top:focus {
+	filter: brightness(1.5);
+	outline: none;
+}
 
+.back-to-top::before,
+.back-to-top::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
+}
+
+.back-to-top::before {
+	width: 3px;
+	height: 18px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #f5f0f6;
+}
+
+.back-to-top::after {
+	width: 13px;
+	height: 13px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: 3px solid #f5f0f6;
+	border-left: 3px solid #f5f0f6;
+}

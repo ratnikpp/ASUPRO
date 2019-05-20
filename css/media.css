@@ -190,6 +190,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
   }
 }
 
+@media screen and ( max-width: 767px) {
+  .toggleMenu {
+    padding-left: 0px;
+  }
+  }
+
+
+
 @media (max-width: 991px) {
   .slider__text {
     font-size: 18px;
@@ -863,6 +871,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     font-size: 13px;
     margin-top: 20px;
    margin-bottom: 10px;
+  }
+
+  .page-main__content h6 {
+    font-size: 13px;
   }
 
 .page-main__content p {
