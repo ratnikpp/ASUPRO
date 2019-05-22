@@ -259,10 +259,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
 
 @media (max-width: 575px) {
-
+  
   .slider__wrapper{
+    display: none;
     width: auto;
   }
+
+  .page-main__slider {
+    padding: 0;
+    margin: 0;
+    height: 150px;
+  background-image: url(../img/backgraund-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+ 
+
+
+
   .slider__text {
     font-size: 12px;
     line-height: 18px;
@@ -920,8 +935,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     display: none;
   }
 }
-
-
 
 
 
