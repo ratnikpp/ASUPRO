@@ -435,7 +435,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     font-size: 14px;
   }
 }
+@media (max-width: 767px) {
 
+
+.crsl-item .thumbnail img {
+    width: 150px;
+    height: 80px;
+    margin-bottom: 0;
+  }
+
+  .products__name {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+}
+/*
 @media screen and ( max-width: 767px) {
   .products {
     margin-bottom: 0;
@@ -500,6 +517,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     margin-bottom: 0;
   }
 }
+
+*/
+
+
 @media (max-width: 991px) {
   .news__title {
     margin-bottom: 20px;
@@ -520,6 +541,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     padding: 2px 5px;
   }
   .news__button {
+    font-size: 12px;
+  }
+  .news__day {
     font-size: 12px;
   }
 }
@@ -566,17 +590,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     font-size: 12px;
     line-height: 14px;
   }
-  .news__content p {
-    display: none;
-  }
-  .news__left-block b {
-    font-size: 10px;
-    padding: 2px 5px;
-  }
+  
+  
   .news__button {
     font-size: 12px;
   }
 }
+
+@media (max-width: 575px) {
+  .news__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .news__content {
+   
+    width: 100%;
+  }
+}
+
 
 @media (max-width: 991px) {
   .info {
@@ -715,7 +749,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     font-size: 11px;
   }
   .page-footer__social {
-  width: 80px;
+  
   margin-bottom: 5px;
   }
   .page-footer__item {
@@ -756,7 +790,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     font-size: 24px;
   }
   .page-footer__social {
-    width: 100px;
+    
   }
   .page-footer__contact a {
     margin-bottom: 5px;
@@ -801,7 +835,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
     font-size: 20px;
   }
   .page-footer__social {
-    width: 80px;
+   
   }
   .page-footer__contact a {
     margin-bottom: 5px;
@@ -908,6 +942,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
 }
 
+@media (max-width: 575px) {
+.page-main__table {
+  display: flex;
+  flex-direction: column;
+  
+  }
+  .page-main__table-block {
+    width: 100%;
+    display: flex;
+    padding:0;
+
+  }
+}
 
 
 @media screen and ( max-width: 767px) {

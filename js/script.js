@@ -33,39 +33,33 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
-}
+};
 
 
 
-//carousell products
-$(function(){
-  $('.crsl-items').carousel({
-    visible: 4,
-    itemMinWidth: 120,
-    itemEqualHeight: 320,
-    itemMargin: 10,
-  });
-  
-  $("a[href=#]").on('click', function(e) {
-    e.preventDefault();
-  });
-});
 
 
-function bacToTop() {
-  let button = $('.back-to-top');
-  $(window).on('scroll', () => {
-    if ($(this).scrollTop() >= 50){
-    button.fadeIn();
-  } else {
-    button.fadeOut();
-  }
-});
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
 
-  button.on('click', (e) => {
-    e.preventDefault();
-    $('html').animate({scrollTop: 0}, 1000);
-  })
-}
 
-backToTop();
+
+
+
+
+
+ 
