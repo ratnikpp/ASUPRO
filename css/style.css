@@ -301,7 +301,7 @@ header {
     padding: 10px;
     font-weight: 400;
     text-transform: none;
-    background: #e4e4e5;
+    background: #eaf0f5;
 }
 
 .dws-menu li>ul li ul {
@@ -1254,8 +1254,8 @@ header {
     display: inline-block;
     color: #111111;
     padding: 10px 5px;
-    background-color: #c4d4e2;
-    border-bottom: 1px solid #ffffff;
+    background-color: #eaf0f5;
+    border-bottom: 1px solid #c7c8ca;
 }
 
 
@@ -1377,4 +1377,14 @@ header {
 
 .page-main__jobs-title h6 {
     padding-right: 10px;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    max-width: 100%;
+    height: auto;
 }
